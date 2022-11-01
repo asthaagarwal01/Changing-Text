@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Changing Menu
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="box">
+            <h2>CHANGING MENU</h2>
+            <p id="content"></p>
+            <div class="buttons">
+                <button onclick="breakfast()">Breakfast</button>
+                <button onclick="lunch()">Lunch</button>
+                <button onclick="dinner()">Dinner</button>
+            </div>
+        </div>
+        <script type="text/javascript">
+            var wel="Welcome to today's menu . Click on the button to see the menu accordingly";
+            document.getElementById("content").innerHTML=wel;
+            function breakfast()
+            {
+                var b="Breakfast Menu : Poha , Paratha , Idli , Tea , Coffee";
+                document.getElementById("content").innerHTML=b;
+            }
+
+            function lunch()
+            {
+                var b="Lunch Menu : Roti , Rice , Dal , Mohito , Limejuice";
+                document.getElementById("content").innerHTML=b;
+            }
+
+            function dinner()
+            {
+                var b="Dinner Menu : Dal makhani , Paneer lababdar , Butter Chicken , Milk , Lassi";
+                document.getElementById("content").innerHTML=b;
+            }
+        </script>
+    </body>
+</html>
